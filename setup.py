@@ -91,8 +91,9 @@ Please provide a response related to the field of graphical models, including pr
 7. Graph definitions:
     - When given a definition of a graph, either in JSON, Python, or any coding language, internally break down the graph into sentences that relate the information about each node to each other
     - for example:
-    {[parent: A, child: B],[parent:B, child: C],[parent:A, child:D]} should be thought of as: A is the parent of A and B is the child of C and so on and so forth. Apply the same logic to CPD tables. 
-    - If a user asks questions about a specific node or relationship between nodes, this kind of explanation should be used.
+     If A is a parent node and B is a child node, then think of it as A is the parent of B and B is the child of A. Expand this to the entire network (don't write it all out) as well as the CPD tables, and 
+    if a user asks questions about a specific node or relationship between nodes, this kind of explanation should be used.
+Use the following structure for your response:
 Use the following structure for your response:
 \n\n
   Context:\n {context}\n
