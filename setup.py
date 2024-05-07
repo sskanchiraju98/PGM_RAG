@@ -15,13 +15,13 @@ import contextlib
 
 # API keys setup
 # API keys setup
-st.write("OPENAI_API_KEY:", st.secrets["OPENAI_API_KEY"])
-st.write("PINECONE_API_KEY:", st.secrets["PINECONE_API_KEY"])
-st.write(
-    "Has environment variables been set:",
-    os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"],
-    os.environ["PINECONE_API_KEY"] == st.secrets["PINECONE_API_KEY"]
-)
+# st.write("OPENAI_API_KEY:", st.secrets["OPENAI_API_KEY"])
+# st.write("PINECONE_API_KEY:", st.secrets["PINECONE_API_KEY"])
+# st.write(
+#     "Has environment variables been set:",
+#     os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"],
+#     os.environ["PINECONE_API_KEY"] == st.secrets["PINECONE_API_KEY"]
+# )
 PINECONE_ENV = "us-east-1"
 index_name = 'pgm-rag'
 dim = 1024
